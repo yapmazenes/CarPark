@@ -1,12 +1,55 @@
+using CarPark.User.Resources;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 using Serilog;
+using System.Globalization;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddMvc().
+    AddDataAnnotationsLocalization(options => options.DataAnnotationLocalizerProvider = (type, factory) =>
+    {
+        var assemblyName = new AssemblyName(typeof(SharedModelResource).GetTypeInfo().Assembly.FullName);
+        return factory.Create(nameof(SharedModelResource), assemblyName.Name);
+    }).
+    AddViewLocalization();
+
+builder.Services.AddLocalization(options =>
+{
+    options.ResourcesPath = "Resources";
+});
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    var supportedCultures = new List<CultureInfo>
+    {
+        new CultureInfo("en-US"),
+        new CultureInfo("tr-TR"),
+        new CultureInfo("ar-SA"),
+    };
+
+    options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("tr-TR");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+
+    options.RequestCultureProviders = new List<IRequestCultureProvider>
+    {
+        new QueryStringRequestCultureProvider(),
+        new CookieRequestCultureProvider(),
+        new AcceptLanguageHeaderRequestCultureProvider()
+    };
+});
+
 builder.Host.UseSerilog((ctx, lc) => lc
-        .WriteTo.Console());
+        .WriteTo.Console()
+        .WriteTo.File("log.txt")
+        .WriteTo.Seq("http://localhost:5341")
+        .Enrich.WithProperty("ApplicationName", "CarPark.User")
+        .Enrich.WithMachineName());
 
 var app = builder.Build();
 
@@ -24,6 +67,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+var cultureOptions = app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>();
+app.UseRequestLocalization(cultureOptions.Value);
 
 app.MapControllerRoute(
     name: "default",

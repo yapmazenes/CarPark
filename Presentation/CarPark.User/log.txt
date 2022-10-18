@@ -1,0 +1,124 @@
+2022-10-15 15:12:27.431 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-15 15:12:28.733 +03:00 [INF] Now listening on: https://localhost:7015
+2022-10-15 15:12:28.736 +03:00 [INF] Now listening on: http://localhost:5015
+2022-10-15 15:12:28.740 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-15 15:12:28.741 +03:00 [INF] Hosting environment: Development
+2022-10-15 15:12:28.742 +03:00 [INF] Content root path: C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\
+2022-10-15 15:12:30.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/ - -
+2022-10-15 15:12:30.489 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:12:30.537 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 15:12:30.542 +03:00 [INF] First Log
+2022-10-15 15:12:30.551 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-15 15:12:30.967 +03:00 [INF] Executed ViewResult - view Index executed in 416.1876ms.
+2022-10-15 15:12:30.987 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 447.6858ms
+2022-10-15 15:12:30.992 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:12:31.205 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/ - - - 200 - text/html;+charset=utf-8 815.9385ms
+2022-10-15 15:12:31.225 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-10-15 15:12:31.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-10-15 15:12:31.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-10-15 15:12:31.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/lib/jquery/dist/jquery.min.js - -
+2022-10-15 15:12:31.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/CarPark.User.styles.css?v=LO5gLJJqnLGpFL2RNUExJnT0xJuOXkvJ7PcwvznPuXc - -
+2022-10-15 15:12:31.254 +03:00 [INF] Sending file. Request path: '/CarPark.User.styles.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\obj\Debug\net6.0\scopedcss\bundle\CarPark.User.styles.css'
+2022-10-15 15:12:31.254 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\css\site.css'
+2022-10-15 15:12:31.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/CarPark.User.styles.css?v=LO5gLJJqnLGpFL2RNUExJnT0xJuOXkvJ7PcwvznPuXc - - - 200 1129 text/css 38.9818ms
+2022-10-15 15:12:31.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-10-15 15:12:31.267 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 41.0772ms
+2022-10-15 15:12:31.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:12:31.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 15:12:31.278 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\js\site.js'
+2022-10-15 15:12:31.278 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2022-10-15 15:12:31.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 12.3648ms
+2022-10-15 15:12:31.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 10.8087ms
+2022-10-15 15:12:31.282 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 55.4806ms
+2022-10-15 15:12:31.290 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\lib\jquery\dist\jquery.min.js'
+2022-10-15 15:12:31.291 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-10-15 15:12:31.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 70.3974ms
+2022-10-15 15:12:31.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 73.2073ms
+2022-10-15 15:12:31.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 123.6360ms
+2022-10-15 15:12:31.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/favicon.ico - -
+2022-10-15 15:12:31.473 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\favicon.ico'
+2022-10-15 15:12:31.474 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/favicon.ico - - - 200 5430 image/x-icon 7.6496ms
+2022-10-15 15:13:02.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:13:02.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 10.7776ms
+2022-10-15 15:13:03.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/ - -
+2022-10-15 15:13:03.092 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:13:03.093 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 15:13:03.094 +03:00 [INF] First Log
+2022-10-15 15:13:03.095 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-15 15:13:03.106 +03:00 [INF] Executed ViewResult - view Index executed in 10.5937ms.
+2022-10-15 15:13:03.107 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 12.3145ms
+2022-10-15 15:13:03.107 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:13:03.109 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/ - - - 200 - text/html;+charset=utf-8 21.2276ms
+2022-10-15 15:13:03.140 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 15:13:03.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:13:03.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 6.5173ms
+2022-10-15 15:13:03.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.5151ms
+2022-10-15 15:13:03.758 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/Home/Privacy - -
+2022-10-15 15:13:03.764 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Privacy (CarPark.User)'
+2022-10-15 15:13:03.766 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 15:13:03.769 +03:00 [INF] Executing ViewResult, running view Privacy.
+2022-10-15 15:13:03.775 +03:00 [INF] Executed ViewResult - view Privacy executed in 7.084ms.
+2022-10-15 15:13:03.776 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Privacy (CarPark.User) in 8.1865ms
+2022-10-15 15:13:03.777 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Privacy (CarPark.User)'
+2022-10-15 15:13:03.779 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/Home/Privacy - - - 200 - text/html;+charset=utf-8 20.9571ms
+2022-10-15 15:13:03.798 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:13:03.798 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 15:13:03.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 2.8141ms
+2022-10-15 15:13:03.822 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.3568ms
+2022-10-15 15:13:04.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/ - -
+2022-10-15 15:13:04.435 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:13:04.435 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 15:13:04.437 +03:00 [INF] First Log
+2022-10-15 15:13:04.439 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-15 15:13:04.443 +03:00 [INF] Executed ViewResult - view Index executed in 4.0189ms.
+2022-10-15 15:13:04.444 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 6.2745ms
+2022-10-15 15:13:04.444 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:13:04.446 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/ - - - 200 - text/html;+charset=utf-8 14.9678ms
+2022-10-15 15:13:04.464 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:13:04.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 15:13:04.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 8.7995ms
+2022-10-15 15:13:04.504 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.3920ms
+2022-10-15 15:13:05.112 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/Home/Privacy - -
+2022-10-15 15:13:05.116 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Privacy (CarPark.User)'
+2022-10-15 15:13:05.119 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 15:13:05.120 +03:00 [INF] Executing ViewResult, running view Privacy.
+2022-10-15 15:13:05.125 +03:00 [INF] Executed ViewResult - view Privacy executed in 5.2482ms.
+2022-10-15 15:13:05.126 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Privacy (CarPark.User) in 6.2385ms
+2022-10-15 15:13:05.127 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Privacy (CarPark.User)'
+2022-10-15 15:13:05.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/Home/Privacy - - - 200 - text/html;+charset=utf-8 16.7706ms
+2022-10-15 15:13:05.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 15:13:05.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:13:05.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 3.6689ms
+2022-10-15 15:13:05.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.8677ms
+2022-10-15 15:13:05.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/ - -
+2022-10-15 15:13:05.802 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:13:05.804 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 15:13:05.807 +03:00 [INF] First Log
+2022-10-15 15:13:05.808 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-15 15:13:05.816 +03:00 [INF] Executed ViewResult - view Index executed in 7.9055ms.
+2022-10-15 15:13:05.817 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 10.4539ms
+2022-10-15 15:13:05.819 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 15:13:05.821 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/ - - - 200 - text/html;+charset=utf-8 21.9971ms
+2022-10-15 15:13:05.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 15:13:05.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 15:13:05.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 4.8486ms
+2022-10-15 15:13:05.868 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.7743ms
+2022-10-15 17:47:14.600 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-15 17:47:15.013 +03:00 [INF] Now listening on: https://localhost:7015
+2022-10-15 17:47:15.020 +03:00 [INF] Now listening on: http://localhost:5015
+2022-10-15 17:47:15.047 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-15 17:47:15.573 +03:00 [INF] Hosting environment: Development
+2022-10-15 17:47:15.575 +03:00 [INF] Content root path: C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\
+2022-10-15 17:47:16.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/ - -
+2022-10-15 17:47:16.459 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 17:47:16.500 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-15 17:47:16.505 +03:00 [INF] First Log
+2022-10-15 17:47:16.516 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-15 17:47:16.785 +03:00 [INF] Executed ViewResult - view Index executed in 263.6024ms.
+2022-10-15 17:47:16.801 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 298.8219ms
+2022-10-15 17:47:16.804 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-15 17:47:16.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/ - - - 200 - text/html;+charset=utf-8 635.3636ms
+2022-10-15 17:47:16.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - -
+2022-10-15 17:47:16.974 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 9.7616ms
+2022-10-15 17:47:16.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
+2022-10-15 17:47:17.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1860ms
