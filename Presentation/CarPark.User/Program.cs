@@ -1,3 +1,6 @@
+using CarPark.Core.Repository.Abstract;
+using CarPark.DataAccess.Repository;
+using CarPark.DataAccess.Settings;
 using CarPark.User.Resources;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
@@ -17,6 +20,9 @@ builder.Services.AddMvc().
         return factory.Create(nameof(SharedModelResource), assemblyName.Name);
     }).
     AddViewLocalization();
+
+builder.Services.Configure<MongoConnectionSetting>(builder.Configuration.GetSection("MongoConnectionSetting"));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(MongoRepositoryBase<>));
 
 builder.Services.AddLocalization(options =>
 {
