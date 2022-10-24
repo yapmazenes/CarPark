@@ -5,8 +5,8 @@ namespace CarPark.Core.Repository.Abstract
 {
     public interface IRepository<TEntity> where TEntity : class, new()
     {
-        GetManyResult<TEntity> AsQueryable();
-        Task<GetManyResult<TEntity>> AsQueryableAsync();
+        GetManyResult<TEntity> GetAll();
+        Task<GetManyResult<TEntity>> GetAllAsync();
 
         GetManyResult<TEntity> FilterBy(Expression<Func<TEntity, bool>> filter);
         Task<GetManyResult<TEntity>> FilterByAsync(Expression<Func<TEntity, bool>> filter);

@@ -1,4 +1,8 @@
+using CarPark.Business.Abstract;
+using CarPark.Business.Concrete;
 using CarPark.Core.Repository.Abstract;
+using CarPark.DataAccess.Abstract;
+using CarPark.DataAccess.Concrete;
 using CarPark.DataAccess.Repository;
 using CarPark.DataAccess.Settings;
 using CarPark.User.Resources;
@@ -22,7 +26,12 @@ builder.Services.AddMvc().
     AddViewLocalization();
 
 builder.Services.Configure<MongoConnectionSetting>(builder.Configuration.GetSection("MongoConnectionSetting"));
+//Todo: Create a new Extension method as like BuildServiceProviders and use here.
+//Todo: Create ServiceRegistration extension class Data Access and Business layer.
+
 builder.Services.AddScoped(typeof(IRepository<>), typeof(MongoRepositoryBase<>));
+builder.Services.AddScoped<IPersonelDataAccess, PersonelDataAccess>();
+builder.Services.AddScoped<IPersonelService, PersonelManager>();
 
 builder.Services.AddLocalization(options =>
 {

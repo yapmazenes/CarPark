@@ -8,7 +8,7 @@ namespace CarPark.DataAccess.Context
     {
         private readonly IMongoDatabase _database;
 
-        public MongoDbContext(IOptions<MongoConnection> settings)
+        public MongoDbContext(IOptions<MongoConnectionSetting> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
             _database = client.GetDatabase(settings.Value.Database);

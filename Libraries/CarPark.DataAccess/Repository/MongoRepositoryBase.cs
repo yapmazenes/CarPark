@@ -14,13 +14,13 @@ namespace CarPark.DataAccess.Repository
         private readonly MongoDbContext _mongoDbContext;
         private readonly IMongoCollection<TEntity> _collection;
 
-        public MongoRepositoryBase(IOptions<MongoConnection> settings)
+        public MongoRepositoryBase(IOptions<MongoConnectionSetting> settings)
         {
             _mongoDbContext = new MongoDbContext(settings);
             _collection = _mongoDbContext.GetCollection<TEntity>();
         }
 
-        public GetManyResult<TEntity> AsQueryable()
+        public GetManyResult<TEntity> GetAll()
         {
             var result = new GetManyResult<TEntity>();
 
@@ -40,7 +40,7 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public async Task<GetManyResult<TEntity>> AsQueryableAsync()
+        public async Task<GetManyResult<TEntity>> GetAllAsync()
         {
             var result = new GetManyResult<TEntity>();
 
