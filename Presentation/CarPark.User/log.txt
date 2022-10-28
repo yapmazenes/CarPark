@@ -122,3 +122,188 @@
 2022-10-15 17:47:16.974 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 9.7616ms
 2022-10-15 17:47:16.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - -
 2022-10-15 17:47:17.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1860ms
+2022-10-28 19:35:32.111 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:35:32.474 +03:00 [INF] Unable to bind to http://localhost:5015 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:35:32.476 +03:00 [INF] Unable to bind to http://localhost:5015 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:36:30.979 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:36:31.179 +03:00 [INF] Unable to bind to http://localhost:5015 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:36:31.181 +03:00 [INF] Unable to bind to http://localhost:5015 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:37:09.381 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:37:09.634 +03:00 [INF] Unable to bind to http://localhost:5001 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:37:09.637 +03:00 [INF] Unable to bind to http://localhost:5001 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:37:49.391 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:37:49.589 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:37:49.590 +03:00 [INF] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-10-28 19:38:09.257 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:38:09.669 +03:00 [INF] Now listening on: http://localhost:5030
+2022-10-28 19:38:09.674 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-28 19:38:09.676 +03:00 [INF] Hosting environment: Development
+2022-10-28 19:38:09.676 +03:00 [INF] Content root path: C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\
+2022-10-28 19:38:10.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/ - -
+2022-10-28 19:38:10.348 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-10-28 19:38:10.399 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-28 19:38:10.439 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-28 19:38:10.443 +03:00 [INF] First Log
+2022-10-28 19:38:10.459 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-28 19:38:10.625 +03:00 [INF] Executed ViewResult - view Index executed in 167.5644ms.
+2022-10-28 19:38:10.635 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 194.3372ms
+2022-10-28 19:38:10.638 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-28 19:38:10.692 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/ - - - 200 - text/html;+charset=utf-8 397.9776ms
+2022-10-28 19:38:10.701 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/css/app.min.css - -
+2022-10-28 19:38:10.701 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/css/style.min.css - -
+2022-10-28 19:38:10.720 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/css/core.min.css - -
+2022-10-28 19:38:10.730 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/js/core.min.js - -
+2022-10-28 19:38:10.730 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/js/script.min.js - -
+2022-10-28 19:38:10.730 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/js/app.min.js - -
+2022-10-28 19:38:10.749 +03:00 [INF] Sending file. Request path: '/assets/css/style.min.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\css\style.min.css'
+2022-10-28 19:38:10.749 +03:00 [INF] Sending file. Request path: '/assets/js/script.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\js\script.min.js'
+2022-10-28 19:38:10.750 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/css/style.min.css - - - 200 4986 text/css 49.4182ms
+2022-10-28 19:38:10.751 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/js/script.min.js - - - 200 5414 application/javascript 20.5857ms
+2022-10-28 19:38:10.757 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:38:10.760 +03:00 [INF] Sending file. Request path: '/assets/css/core.min.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\css\core.min.css'
+2022-10-28 19:38:10.762 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/css/core.min.css - - - 200 232024 text/css 43.0783ms
+2022-10-28 19:38:10.761 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/img/avatar/1.jpg - -
+2022-10-28 19:38:10.766 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 8.9507ms
+2022-10-28 19:38:10.767 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/img/avatar/2.jpg - -
+2022-10-28 19:38:10.777 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/2.jpg'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\img\avatar\2.jpg'
+2022-10-28 19:38:10.777 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/1.jpg'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\img\avatar\1.jpg'
+2022-10-28 19:38:10.778 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/img/avatar/2.jpg - - - 200 3150 image/jpeg 11.7219ms
+2022-10-28 19:38:10.780 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/img/avatar/1.jpg - - - 200 3150 image/jpeg 19.7453ms
+2022-10-28 19:38:10.782 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/img/avatar/3.jpg - -
+2022-10-28 19:38:10.786 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/img/avatar/4.jpg - -
+2022-10-28 19:38:10.788 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/3.jpg'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\img\avatar\3.jpg'
+2022-10-28 19:38:10.790 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/4.jpg'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\img\avatar\4.jpg'
+2022-10-28 19:38:10.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/img/avatar/3.jpg - - - 200 3150 image/jpeg 8.7271ms
+2022-10-28 19:38:10.791 +03:00 [INF] Sending file. Request path: '/assets/css/app.min.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\css\app.min.css'
+2022-10-28 19:38:10.793 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/img/avatar/4.jpg - - - 200 3150 image/jpeg 7.3433ms
+2022-10-28 19:38:10.795 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/img/avatar/5.jpg - -
+2022-10-28 19:38:10.799 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/css/app.min.css - - - 200 419738 text/css 97.6805ms
+2022-10-28 19:38:10.799 +03:00 [INF] Sending file. Request path: '/assets/js/app.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\js\app.min.js'
+2022-10-28 19:38:10.807 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/5.jpg'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\img\avatar\5.jpg'
+2022-10-28 19:38:10.809 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/js/app.min.js - - - 200 62609 application/javascript 78.6422ms
+2022-10-28 19:38:10.811 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/img/avatar/5.jpg - - - 200 3150 image/jpeg 16.1567ms
+2022-10-28 19:38:10.811 +03:00 [INF] Sending file. Request path: '/assets/js/core.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\js\core.min.js'
+2022-10-28 19:38:10.812 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_vs/browserLink - -
+2022-10-28 19:38:10.815 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/js/core.min.js - - - 200 232324 application/javascript 84.8632ms
+2022-10-28 19:38:10.877 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.9624ms
+2022-10-28 19:38:10.945 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - -
+2022-10-28 19:38:10.945 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/themify.woff?-fvbane - -
+2022-10-28 19:38:10.949 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/material-icons/css/material-icons.css - -
+2022-10-28 19:38:10.958 +03:00 [INF] Sending file. Request path: '/assets/fonts/themify.woff'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\fonts\themify.woff'
+2022-10-28 19:38:10.961 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 404 0 - 15.9713ms
+2022-10-28 19:38:10.962 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/themify.woff?-fvbane - - - 200 56108 application/font-woff 16.8375ms
+2022-10-28 19:38:10.965 +03:00 [INF] Sending file. Request path: '/assets/vendor/material-icons/css/material-icons.css'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\material-icons\css\material-icons.css'
+2022-10-28 19:38:10.967 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/typeahead/typeahead.jquery.min.js - -
+2022-10-28 19:38:10.969 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/typeahead/bloodhound.min.js - -
+2022-10-28 19:38:10.970 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/material-icons/css/material-icons.css - - - 200 1053 text/css 21.3205ms
+2022-10-28 19:38:10.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/i8-icon/jquery-i8-icon.min.js - -
+2022-10-28 19:38:10.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/screenfull/screenfull.min.js - -
+2022-10-28 19:38:10.990 +03:00 [INF] Sending file. Request path: '/assets/vendor/typeahead/bloodhound.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\typeahead\bloodhound.min.js'
+2022-10-28 19:38:10.991 +03:00 [INF] Sending file. Request path: '/assets/vendor/typeahead/typeahead.jquery.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\typeahead\typeahead.jquery.min.js'
+2022-10-28 19:38:10.995 +03:00 [INF] Sending file. Request path: '/assets/vendor/screenfull/screenfull.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\screenfull\screenfull.min.js'
+2022-10-28 19:38:10.997 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/typeahead/typeahead.jquery.min.js - - - 200 26900 application/javascript 29.1149ms
+2022-10-28 19:38:10.998 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/typeahead/bloodhound.min.js - - - 200 12998 application/javascript 25.8719ms
+2022-10-28 19:38:10.999 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/screenfull/screenfull.min.js - - - 200 2002 application/javascript 14.4661ms
+2022-10-28 19:38:11.000 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/typed.js/typed.min.js - -
+2022-10-28 19:38:11.006 +03:00 [INF] Sending file. Request path: '/assets/vendor/i8-icon/jquery-i8-icon.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\i8-icon\jquery-i8-icon.min.js'
+2022-10-28 19:38:11.008 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/i8-icon/jquery-i8-icon.min.js - - - 200 20992 application/javascript 24.0477ms
+2022-10-28 19:38:11.034 +03:00 [INF] Sending file. Request path: '/assets/vendor/typed.js/typed.min.js'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\typed.js\typed.min.js'
+2022-10-28 19:38:11.037 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/typed.js/typed.min.js - - - 200 11700 application/javascript 37.3034ms
+2022-10-28 19:38:11.038 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - -
+2022-10-28 19:38:11.042 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/material-icons/fonts/MaterialIcons-Regular.woff2 - -
+2022-10-28 19:38:11.043 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - - - 404 0 - 5.2977ms
+2022-10-28 19:38:11.053 +03:00 [INF] Sending file. Request path: '/assets/vendor/material-icons/fonts/MaterialIcons-Regular.woff2'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\material-icons\fonts\MaterialIcons-Regular.woff2'
+2022-10-28 19:38:11.056 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/material-icons/fonts/MaterialIcons-Regular.woff2 - - - 200 44300 font/woff2 13.9674ms
+2022-10-28 19:38:11.063 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/vendor/i8-icon/i8-color-icons.svg - -
+2022-10-28 19:38:11.073 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/data/json/files.json - -
+2022-10-28 19:38:11.076 +03:00 [INF] Sending file. Request path: '/assets/vendor/i8-icon/i8-color-icons.svg'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\vendor\i8-icon\i8-color-icons.svg'
+2022-10-28 19:38:11.078 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/vendor/i8-icon/i8-color-icons.svg - - - 200 191368 image/svg+xml 14.5677ms
+2022-10-28 19:38:11.084 +03:00 [INF] Sending file. Request path: '/assets/data/json/files.json'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\data\json\files.json'
+2022-10-28 19:38:11.089 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/data/json/files.json - - - 200 25942 application/json 15.6320ms
+2022-10-28 19:38:11.090 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - -
+2022-10-28 19:38:11.090 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - - - 404 0 - 0.7641ms
+2022-10-28 19:38:11.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/img/favicon.png - -
+2022-10-28 19:38:11.183 +03:00 [INF] Sending file. Request path: '/assets/img/favicon.png'. Physical path: 'C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\wwwroot\assets\img\favicon.png'
+2022-10-28 19:38:11.187 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/img/favicon.png - - - 200 666 image/png 11.3393ms
+2022-10-28 19:38:17.088 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/dashboard/index.html - -
+2022-10-28 19:38:17.092 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/dashboard/index.html - - - 404 0 - 4.2262ms
+2022-10-28 19:38:18.129 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:38:18.135 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 6.2009ms
+2022-10-28 19:38:37.413 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:38:37.423 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 9.4198ms
+2022-10-28 19:40:51.487 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:40:51.747 +03:00 [INF] Now listening on: http://localhost:5030
+2022-10-28 19:40:51.750 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-28 19:40:51.751 +03:00 [INF] Hosting environment: Development
+2022-10-28 19:40:51.752 +03:00 [INF] Content root path: C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\
+2022-10-28 19:40:52.529 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/ - -
+2022-10-28 19:40:52.613 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-10-28 19:40:52.657 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-28 19:40:52.689 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-28 19:40:52.694 +03:00 [INF] First Log
+2022-10-28 19:40:52.714 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-28 19:40:52.852 +03:00 [INF] Executed ViewResult - view Index executed in 143.9216ms.
+2022-10-28 19:40:52.862 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 170.9524ms
+2022-10-28 19:40:52.864 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-28 19:40:52.968 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/ - - - 200 - text/html;+charset=utf-8 443.4854ms
+2022-10-28 19:40:52.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_vs/browserLink - -
+2022-10-28 19:40:52.997 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:40:53.003 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 5.8965ms
+2022-10-28 19:40:53.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.2081ms
+2022-10-28 19:40:53.112 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - -
+2022-10-28 19:40:53.124 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 404 0 - 12.0456ms
+2022-10-28 19:40:53.169 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - -
+2022-10-28 19:40:53.172 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - - - 404 0 - 2.6222ms
+2022-10-28 19:40:53.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - -
+2022-10-28 19:40:53.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - - - 404 0 - 3.1007ms
+2022-10-28 19:40:54.047 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/dashboard/index.html - -
+2022-10-28 19:40:54.051 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/dashboard/index.html - - - 404 0 - 3.6835ms
+2022-10-28 19:40:55.623 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:40:55.629 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 5.7118ms
+2022-10-28 19:41:02.704 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/dashboard/index.html - -
+2022-10-28 19:41:02.707 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/dashboard/index.html - - - 404 0 - 3.8280ms
+2022-10-28 19:41:03.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:41:03.748 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 8.2086ms
+2022-10-28 19:41:53.381 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-28 19:41:53.886 +03:00 [INF] Now listening on: http://localhost:5030
+2022-10-28 19:41:53.899 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-28 19:41:53.902 +03:00 [INF] Hosting environment: Development
+2022-10-28 19:41:53.904 +03:00 [INF] Content root path: C:\Users\pc\source\repos\Educations\CarPark\Presentation\CarPark.User\
+2022-10-28 19:41:54.534 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/ - -
+2022-10-28 19:41:54.587 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-10-28 19:41:54.642 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-28 19:41:54.694 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-28 19:41:54.702 +03:00 [INF] First Log
+2022-10-28 19:41:54.720 +03:00 [INF] Executing ViewResult, running view Index.
+2022-10-28 19:41:54.896 +03:00 [INF] Executed ViewResult - view Index executed in 174.0457ms.
+2022-10-28 19:41:54.911 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 213.5734ms
+2022-10-28 19:41:54.913 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-10-28 19:41:54.958 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/ - - - 200 - text/html;+charset=utf-8 429.3823ms
+2022-10-28 19:41:55.008 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_vs/browserLink - -
+2022-10-28 19:41:55.009 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:41:55.019 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 9.2455ms
+2022-10-28 19:41:55.052 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.7456ms
+2022-10-28 19:41:55.124 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - -
+2022-10-28 19:41:55.137 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 404 0 - 12.8306ms
+2022-10-28 19:41:55.177 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - -
+2022-10-28 19:41:55.198 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - - - 404 0 - 20.9832ms
+2022-10-28 19:41:55.224 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - -
+2022-10-28 19:41:55.225 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - - - 404 0 - 0.9549ms
+2022-10-28 19:41:56.237 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/Home/Dashboard - -
+2022-10-28 19:41:56.240 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Dashboard (CarPark.User)'
+2022-10-28 19:41:56.242 +03:00 [INF] Route matched with {action = "Dashboard", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-10-28 19:41:56.245 +03:00 [INF] Executing ViewResult, running view Dashboard.
+2022-10-28 19:41:56.256 +03:00 [INF] Executed ViewResult - view Dashboard executed in 11.1646ms.
+2022-10-28 19:41:56.257 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Dashboard (CarPark.User) in 12.5237ms
+2022-10-28 19:41:56.258 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Dashboard (CarPark.User)'
+2022-10-28 19:41:56.262 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/Home/Dashboard - - - 200 - text/html;+charset=utf-8 24.8828ms
+2022-10-28 19:41:56.304 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - -
+2022-10-28 19:41:56.304 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/_vs/browserLink - -
+2022-10-28 19:41:56.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_framework/aspnetcore-browser-refresh.js - - - 200 11993 application/javascript;+charset=utf-8 1.8118ms
+2022-10-28 19:41:56.315 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.1216ms
+2022-10-28 19:41:56.374 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - -
+2022-10-28 19:41:56.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 404 0 - 1.5382ms
+2022-10-28 19:41:56.398 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - -
+2022-10-28 19:41:56.402 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.woff?v=4.7.0 - - - 404 0 - 3.7874ms
+2022-10-28 19:41:56.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - -
+2022-10-28 19:41:56.459 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5030/assets/fonts/fontawesome-webfont.ttf?v=4.7.0 - - - 404 0 - 1.9800ms

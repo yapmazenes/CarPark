@@ -19,9 +19,9 @@ namespace CarPark.DataAccess.Concrete
         private readonly MongoDbContext _mongoDbContext;
         private readonly IMongoCollection<Personel> _collection;
 
-        public PersonelDataAccess(IOptions<MongoConnectionSetting> settings, MongoDbContext mongoDbContext) : base(settings)
+        public PersonelDataAccess(IOptions<MongoConnectionSetting> settings) : base(settings)
         {
-            _mongoDbContext = mongoDbContext;
+            _mongoDbContext = new MongoDbContext(settings);
             _collection = _mongoDbContext.GetCollection<Personel>();
         }
     }
