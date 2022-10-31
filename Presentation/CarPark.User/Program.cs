@@ -1,12 +1,17 @@
+using AspNetCore.Identity.MongoDbCore.Models;
 using CarPark.Business.Abstract;
 using CarPark.Business.Concrete;
 using CarPark.Core.Repository.Abstract;
 using CarPark.DataAccess.Abstract;
 using CarPark.DataAccess.Concrete;
+using CarPark.DataAccess.Context;
 using CarPark.DataAccess.Repository;
 using CarPark.DataAccess.Settings;
+using CarPark.Entities.Concrete;
 using CarPark.User.Resources;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Serilog;
 using System.Globalization;
@@ -28,6 +33,27 @@ builder.Services.AddMvc().
 builder.Services.Configure<MongoConnectionSetting>(builder.Configuration.GetSection("MongoConnectionSetting"));
 //Todo: Create a new Extension method as like BuildServiceProviders and use here.
 //Todo: Create ServiceRegistration extension class Data Access and Business layer.
+
+builder.Services.AddAuthentication(option =>
+{
+    option.DefaultScheme = IdentityConstants.ApplicationScheme;
+    option.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+}).AddIdentityCookies(option => { });
+
+builder.Services.AddIdentityCore<Personel>(option => { })
+    .AddRoles<MongoIdentityRole>()
+    .AddMongoDbStores<Personel, MongoIdentityRole, Guid>(builder.Configuration.GetSection("MongoConnectionSetting:ConnectionString").Value,
+                                                         builder.Configuration.GetSection("MongoConnectionSetting:Database").Value)
+    .AddSignInManager()
+    .AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(option =>
+{
+    option.Cookie.HttpOnly = true;
+    option.ExpireTimeSpan = TimeSpan.FromSeconds(5);
+    option.LoginPath = "/Account/Login";
+    option.SlidingExpiration = true;
+});
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(MongoRepositoryBase<>));
 builder.Services.AddScoped<IPersonelDataAccess, PersonelDataAccess>();
@@ -81,6 +107,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 var cultureOptions = app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>();

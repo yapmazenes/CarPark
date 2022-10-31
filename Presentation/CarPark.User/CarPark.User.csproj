@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Views\Personels\GetPersonelsByAge.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
     <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
@@ -17,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\CarPark.Business\CarPark.Business.csproj" />
     <ProjectReference Include="..\..\Libraries\CarPark.DataAccess\CarPark.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Libraries\CarPark.Models\CarPark.Models.csproj" />
   </ItemGroup>
 
 </Project>
