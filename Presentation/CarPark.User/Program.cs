@@ -34,6 +34,8 @@ builder.Services.Configure<MongoConnectionSetting>(builder.Configuration.GetSect
 //Todo: Create a new Extension method as like BuildServiceProviders and use here.
 //Todo: Create ServiceRegistration extension class Data Access and Business layer.
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 builder.Services.AddAuthentication(option =>
 {
     option.DefaultScheme = IdentityConstants.ApplicationScheme;
@@ -58,6 +60,9 @@ builder.Services.ConfigureApplicationCookie(option =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(MongoRepositoryBase<>));
 builder.Services.AddScoped<IPersonelDataAccess, PersonelDataAccess>();
 builder.Services.AddScoped<IPersonelService, PersonelManager>();
+
+builder.Services.AddScoped<ICityDataAccess, CityDataAccess>();
+builder.Services.AddScoped<ICityService, CityManager>();
 
 builder.Services.AddLocalization(options =>
 {
