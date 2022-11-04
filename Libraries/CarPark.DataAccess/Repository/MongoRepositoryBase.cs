@@ -100,13 +100,14 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public GetOneResult<TEntity> GetById(string id)
+        public GetOneResult<TEntity> GetById(string id, string idType = "object")
         {
             var result = new GetOneResult<TEntity>();
 
             try
             {
-                var objectId = ObjectId.Parse(id);
+                var objectId = GetObjectId(id, idType);
+
                 var filter = Builders<TEntity>.Filter.Eq("_id", objectId);
                 var data = _collection.Find(filter).FirstOrDefault();
 
@@ -122,13 +123,15 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public async Task<GetOneResult<TEntity>> GetByIdAsync(string id)
+
+
+        public async Task<GetOneResult<TEntity>> GetByIdAsync(string id, string idType = "object")
         {
             var result = new GetOneResult<TEntity>();
 
             try
             {
-                var objectId = ObjectId.Parse(id);
+                var objectId = GetObjectId(id, idType);
                 var filter = Builders<TEntity>.Filter.Eq("_id", objectId);
                 var data = await _collection.Find(filter).FirstOrDefaultAsync();
 
@@ -143,8 +146,6 @@ namespace CarPark.DataAccess.Repository
 
             return result;
         }
-
-
 
         public GetOneResult<TEntity> InsertOne(TEntity entity)
         {
@@ -218,13 +219,13 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public GetOneResult<TEntity> ReplaceOne(TEntity entity, string id)
+        public GetOneResult<TEntity> ReplaceOne(TEntity entity, string id, string idType = "object")
         {
             var result = new GetOneResult<TEntity>();
 
             try
             {
-                var objectId = ObjectId.Parse(id);
+                var objectId = GetObjectId(id, idType);
                 var filter = Builders<TEntity>.Filter.Eq("_id", objectId);
                 var updatedDocument = _collection.ReplaceOne(filter, entity);
 
@@ -239,13 +240,13 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public async Task<GetOneResult<TEntity>> ReplaceOneAsync(TEntity entity, string id)
+        public async Task<GetOneResult<TEntity>> ReplaceOneAsync(TEntity entity, string id, string idType = "object")
         {
             var result = new GetOneResult<TEntity>();
 
             try
             {
-                var objectId = ObjectId.Parse(id);
+                var objectId = GetObjectId(id, idType);
                 var filter = Builders<TEntity>.Filter.Eq("_id", objectId);
                 var updatedDocument = await _collection.ReplaceOneAsync(filter, entity);
 
@@ -300,13 +301,13 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public GetOneResult<TEntity> DeleteById(string id)
+        public GetOneResult<TEntity> DeleteById(string id, string idType = "object")
         {
             var result = new GetOneResult<TEntity>();
 
             try
             {
-                var objectId = ObjectId.Parse(id);
+                var objectId = GetObjectId(id, idType);
                 var filter = Builders<TEntity>.Filter.Eq("_id", objectId);
                 var data = _collection.FindOneAndDelete(filter);
 
@@ -322,13 +323,13 @@ namespace CarPark.DataAccess.Repository
             return result;
         }
 
-        public async Task<GetOneResult<TEntity>> DeleteByIdAsync(string id)
+        public async Task<GetOneResult<TEntity>> DeleteByIdAsync(string id, string idType = "object")
         {
             var result = new GetOneResult<TEntity>();
 
             try
             {
-                var objectId = ObjectId.Parse(id);
+                var objectId = GetObjectId(id, idType);
                 var filter = Builders<TEntity>.Filter.Eq("_id", objectId);
                 var data = await _collection.FindOneAndDeleteAsync(filter);
 
@@ -353,5 +354,29 @@ namespace CarPark.DataAccess.Repository
         {
             await _collection.DeleteManyAsync(filter);
         }
+
+        #region PrivateMethods
+
+        /// <summary>
+        /// Get Converted Id by idType
+        /// </summary>
+        /// <param name="id">Mongo Data Id</param>
+        /// <param name="idType">Data Identifier Type</param>
+        /// <returns>Converted Identifier</returns>
+        private object GetObjectId(string id, string idType = "object")
+        {
+            switch (idType)
+            {
+                case "guid":
+                    return Guid.Parse(id);
+
+                case "object":
+                    return ObjectId.Parse(id);
+
+                default:
+                    return Guid.Parse(id);
+            }
+        }
+        #endregion
     }
 }

@@ -86,5 +86,22 @@ namespace CarPark.User.Controllers
             else
                 return Json(new { message = "Basarisiz", success = false, personel = personelProfileInfo });
         }
+
+        [Route("getroles/{id}")]
+        public async Task<IActionResult> GetRoles(string id)
+        {
+            var result = await _personelService.GetPersonelRoles(id);
+
+            return Json(result);
+        }
+
+        [HttpPost]
+        [Route("update/personel/roles")]
+        public async Task<IActionResult> UpdatePersonelRoles(string personelId, string[] personelRoleList)
+        {
+            var updateResult = await _personelService.UpdatePersonelRoles(personelId, personelRoleList);
+
+            return Json(updateResult);
+        }
     }
 }
